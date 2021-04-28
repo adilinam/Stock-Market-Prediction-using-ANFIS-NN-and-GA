@@ -1,0 +1,30 @@
+[System]
+Name='ga_model'
+Type='sugeno'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=2
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='in1'
+Range=[137.009995 245.029999]
+NumMFs=2
+MF1='in1cluster1':'gaussmf',[18.283314351949 210.387045651292]
+MF2='in1cluster2':'gaussmf',[22.6632949279932 175.729387551886]
+
+[Output1]
+Name='out1'
+Range=[140.570007 246.130005]
+NumMFs=2
+MF1='out1cluster1':'linear',[0.95484837115844 13.1354720655149]
+MF2='out1cluster2':'linear',[0.909456826913848 17.8739434189928]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1

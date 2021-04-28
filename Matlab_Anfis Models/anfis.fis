@@ -1,0 +1,73 @@
+[System]
+Name='anfis'
+Type='sugeno'
+Version=2.0
+NumInputs=6
+NumOutputs=1
+NumRules=3
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='in1'
+Range=[2020 2021]
+NumMFs=3
+MF1='in1cluster1':'gaussmf',[0.176776695296637 2020]
+MF2='in1cluster2':'gaussmf',[0.176776695296637 2020]
+MF3='in1cluster3':'gaussmf',[0.176776695296637 2021]
+
+[Input2]
+Name='in2'
+Range=[137.009995 245.029999]
+NumMFs=3
+MF1='in2cluster1':'gaussmf',[19.0954193330495 211.490005]
+MF2='in2cluster2':'gaussmf',[19.0954193330495 180.619995]
+MF3='in2cluster3':'gaussmf',[19.0954193330495 236.149994]
+
+[Input3]
+Name='in3'
+Range=[140.570007 246.130005]
+NumMFs=3
+MF1='in3cluster1':'gaussmf',[18.6605476019596 212.100006]
+MF2='in3cluster2':'gaussmf',[18.6605476019596 183.649994]
+MF3='in3cluster3':'gaussmf',[18.6605476019596 238.550003]
+
+[Input4]
+Name='in4'
+Range=[132.520004 242.919998]
+NumMFs=3
+MF1='in4cluster1':'gaussmf',[19.5161461000885 209.25]
+MF2='in4cluster2':'gaussmf',[19.5161461000885 179.899994]
+MF3='in4cluster3':'gaussmf',[19.5161461000885 233.229996]
+
+[Input5]
+Name='in5'
+Range=[135.979996 244.990005]
+NumMFs=3
+MF1='in5cluster1':'gaussmf',[19.2704291452766 209.699997]
+MF2='in5cluster2':'gaussmf',[19.2704291452766 180.759995]
+MF3='in5cluster3':'gaussmf',[19.2704291452766 237.039993]
+
+[Input6]
+Name='in6'
+Range=[134.612076 244.427048]
+NumMFs=3
+MF1='in6cluster1':'gaussmf',[19.4127278442527 208.671814]
+MF2='in6cluster2':'gaussmf',[19.4127278442527 178.941589]
+MF3='in6cluster3':'gaussmf',[19.4127278442527 237.039993]
+
+[Output1]
+Name='out1'
+Range=[10550600 84866200]
+NumMFs=3
+MF1='out1cluster1':'linear',[25167.9654079908 -41033.4014313741 2948439.6747722 -3417526.17049503 3063665.21747269 -2730428.29448426 12577.8211314709]
+MF2='out1cluster2':'linear',[62739.7936238552 899464.017860188 2539795.23776566 -4259545.59615731 787172.902139676 -547483.778983871 31.195917873929]
+MF3='out1cluster3':'linear',[32745.8993915551 1686841.07867277 4069089.82029168 -4685822.34296167 31269.8537897645 -1342844.71914782 1210.22973196507]
+
+[Rules]
+1 1 1 1 1 1, 1 (1) : 1
+2 2 2 2 2 2, 2 (1) : 1
+3 3 3 3 3 3, 3 (1) : 1

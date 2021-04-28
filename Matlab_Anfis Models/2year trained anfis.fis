@@ -1,0 +1,30 @@
+[System]
+Name='2year trained anfis'
+Type='sugeno'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=2
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='in1'
+Range=[100.190002 246.130005]
+NumMFs=2
+MF1='in1cluster1':'gaussmf',[22.2352211550955 135.957133267052]
+MF2='in1cluster2':'gaussmf',[28.2583519079499 208.573877557573]
+
+[Output1]
+Name='out1'
+Range=[99.550003 245.029999]
+NumMFs=2
+MF1='out1cluster1':'linear',[0.978670681853315 1.66867790455821]
+MF2='out1cluster2':'linear',[0.997916928885792 -1.9566615584171]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
